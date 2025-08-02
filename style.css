@@ -1,7 +1,7 @@
 body { 
   font-family: 'Courier New', Courier, monospace;
-  background-color: #f0f0f0;
-  color: #333;
+  background: #debd6a;
+background: linear-gradient(90deg,rgba(222, 189, 106, 1) 0%, rgba(218, 237, 226, 1) 50%, rgba(74, 73, 60, 1) 100%);
   margin: 0;
   box-sizing: border-box;
 }
@@ -39,15 +39,70 @@ body {
     text-decoration: underline;
 }
 li img {
-    width: 500px;
+    width: 450px;
     border-radius: 5px;
     margin-top: 10px;
 }
+#about {
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: #f9f9f9;}
+#about h2 {
+    margin-top: 0;
+}
+#about p {
+    line-height: 1.6;
+    color: #333;
+}
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    align-items: center;
+}
+.education-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #projects {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+#projects a {
+    color: teal;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    list-style: none;
+  }
+#projects a:hover {
+    color: darkslategray;
+}
+#project-details button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 #projects ul {
   list-style-type: none;
@@ -55,7 +110,7 @@ li img {
   width: 80%;
 }
 .project-details {
-  background-color: #fff;
+  background-color: #e8dede;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -63,7 +118,28 @@ li img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 20px;
 }
 .project-details h3 {
   margin-top: 0;
+}
+#footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+#footer p {
+  margin: 0;
+}
+#footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+#footer a:hover {
+  text-decoration: underline;
 }
