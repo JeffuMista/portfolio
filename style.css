@@ -12,6 +12,23 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+h1 {
+    font-size: 36px;;
+}
+h2 {
+    font-size: 30px;;
+}
+h3 {
+    font-size: 26px;;
+}
+h4 {
+    font-size: 24px;;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
 #header {
     display: flex;
     justify-content: space-between;
@@ -23,7 +40,6 @@ body {
 }
 #header h1 {
     margin: 0;
-    font-size: 24px;
 }
 #nav {
     display: flex;
@@ -59,9 +75,25 @@ li img {
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background-color: #FDFD96
+    background-color: #FDFD96;
   }
-
+#about-profile {
+  min-width: 350px;
+  text-align: center;
+}
+.fa {
+    font-size: 50px;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: gray;
+}
+.fa:hover {
+    color: black;
+    background-color: #ddd;
+}
 #about h2 {
     margin-top: 0;
 }
@@ -75,16 +107,20 @@ li img {
     margin-right: 20px;
     align-items: center;
 }
-.education-skills {
+#education-skills {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
     border-radius: 5px;
+    margin-top: 20px;
+    background: #f5f581;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
+#education-skills h3 {
+    margin-top: 0;
+    margin-left: 20px;
+}
 #projects {
   display: flex;
   flex-direction: column;
@@ -92,11 +128,12 @@ li img {
   padding: 20px;
 }
 #projects a {
-    color: teal;
+    background-color: #0077B6;
+    color:#f9f9f9;
     text-decoration: none;
     font-weight: bold;
     justify-content: center;
-    padding: 5px 10px;
+    padding: 5px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
     list-style: none;
@@ -104,15 +141,7 @@ li img {
 #projects a:hover {
     color: darkslategray;
 }
-#project-details button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
+
 #projects ul {
   list-style-type: none;
   padding: 0;
@@ -128,6 +157,10 @@ li img {
   flex-direction: row;
   align-items: center;
   gap: 20px;
+}
+.project-details:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .project-details h3 {
   margin-top: 0;
@@ -170,11 +203,11 @@ li img {
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  box-sizing: border-box; /* Ensures padding doesn't increase total width */
+  box-sizing: border-box; 
 }
 
 .form-group textarea {
-  resize: vertical; /* Allows vertical resizing of the textarea */
+  resize: vertical; 
 }
 
 .contact-form button {
@@ -194,7 +227,6 @@ li img {
   background-color: #0056b3;
 }
 #footer {
-  margin-top: 20px;
   text-align: center;
   padding: 20px;
   background-color: #0077B6;
