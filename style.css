@@ -157,9 +157,9 @@ li img {
   align-items: center;
   padding: 20px;
 }
-#projects a {
+#projects a, #about a {
     background-color: #0077B6;
-    color:#f9f9f9;
+    color: rgba(255, 255, 255, 0.886);
     text-decoration: none;
     font-weight: bold;
     justify-content: center;
@@ -167,9 +167,12 @@ li img {
     border-radius: 5px;
     transition: background-color 0.3s;
     list-style: none;
+    font-size: 18px;
+    font-weight: bold;
   }
-#projects a:hover {
-    color: darkslategray;
+#projects a:hover, #about a:hover {
+    color: white;
+    background-color: #0056b3;
 }
 
 #projects ul {
@@ -270,6 +273,7 @@ li img {
 }
 #footer p {
   margin-top: 10px;
+  color: rgba(255, 255, 255, 0.886);
 }
 #footer a {
   color: white;
