@@ -6,14 +6,42 @@
 #ADEBF4
 #FDFD96
 */
+/*Break points for responsiveness across devices 600px, 601px, 768px, 992px, 1200px*/
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%
+  }
+}
+@media screen and (max-width: 601px) {
+  body {
+    width: 100%
+  }
+@media screen and (max-width: 768px) {
+  body {
+    width: 100%
+  }
+}
+@media screen and (max-width: 992px) {
+  body {
+    width: 100%
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    width: 100%
+  }
+}
+}
 body { 
   font-family: 'Courier New', Courier, monospace;
   background: #ADEBF4;
   margin: 0;
   box-sizing: border-box;
+  background-size: cover;
+  width: 100%;
 }
 h1 {
-    font-size: 36px;;
+    font-size: 34px;;
 }
 h2 {
     font-size: 30px;;
@@ -37,6 +65,7 @@ p {
     color: white;
     padding: 30px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-size: cover;
 }
 #header h1 {
     margin: 0;
@@ -76,10 +105,11 @@ li img {
     align-items: center;
     gap: 40px;
     background-color: #FDFD96;
+    background-size: cover;
   }
 #about-profile {
-  min-width: 350px;
   text-align: center;
+  min-width: 350px;
 }
 .fa {
     font-size: 50px;
@@ -157,6 +187,7 @@ li img {
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  background-size: cover;
 }
 .project-details:hover {
   transform: translateY(-5px);
@@ -165,9 +196,11 @@ li img {
 .project-details h3 {
   margin-top: 0;
 }
+
 #contact {
   padding: 20px;
-  background-color:#ddd
+  background-color:#ddd;
+  background-size: cover;
 }
 .contact-form {
   max-width: 500px;
@@ -233,7 +266,7 @@ li img {
   color: white;
   position: relative;
   bottom: 0;
-  width: 100%;
+  background-size: cover;
 }
 #footer p {
   margin-top: 10px;
