@@ -28,7 +28,9 @@ Or use a live server (e.g., VS Code extension).
 Push to GitHub/Vercel Netflify. Enable GitHub Pages in repo settings if using GitHub
 
 **Live Demo** 🔗
-👉 View Portfolio - https://portfolio-sepia-alpha-76m6u0jiqo.vercel.app/
+👉 View Portfolio: 
+GitHub Pages - https://jeffumista.github.io/portfolio/
+Vercel - https://portfolio-sepia-alpha-76m6u0jiqo.vercel.app/
 
 **License** 📄
 MIT. See LICENSE
