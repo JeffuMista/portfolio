@@ -7,7 +7,12 @@
 #FDFD96
 */
 /*Break points for responsiveness across devices 600px, 601px, 768px, 992px, 1200px*/
-@media screen and (max-width: 600px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* @media screen and (max-width: 600px) {
   body {
     width: 100%
   }
@@ -30,30 +35,38 @@
   body {
     width: 100%
   }
-}
+} */
+/* } */
+html {
+  font-size: 62.5%;
+  /* 10px */
 }
 body { 
   font-family: 'Courier New', Courier, monospace;
-  background: #ADEBF4;
+  background: white;
   margin: 0;
   box-sizing: border-box;
-  background-size: cover;
-  width: 100%;
 }
+#container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}
+
 h1 {
-    font-size: 34px;;
+    font-size: 3.5rem;
 }
 h2 {
-    font-size: 30px;;
+    font-size: 3rem;
 }
 h3 {
-    font-size: 26px;;
+    font-size: 2.6rem;
 }
 h4 {
-    font-size: 24px;;
+    font-size: 2.4rem;
 }
 p {
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 1.6;
     color: #333;
 }
@@ -63,7 +76,7 @@ p {
     align-items: center;
     background-color: #0077B6;
     color: white;
-    padding: 30px 20px;
+    padding: 3rem 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-size: cover;
 }
@@ -72,48 +85,50 @@ p {
 }
 #nav {
     display: flex;
-    gap: 15px;
+    gap: 1.5rem;
 }
 #nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
     justify-content: center;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
     transition: background-color 0.3s;
     list-style: none;
 }
 #nav ul li {
     display: inline;
+    font-size: 1.6rem;
 }
 #nav a:hover {
     text-decoration: underline;
 }
-li img {
-    width: 450px;
-    border-radius: 5px;
-    margin-top: 10px;
-}
 #about {
-    padding: 20px;
+    padding: 2rem 2rem 10rem 2rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 4rem;
     background-color: #FDFD96;
     background-size: cover;
   }
 #about-profile {
   text-align: center;
-  min-width: 350px;
+  min-width: 35rem;
+} 
+.profile-pic {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #0077B6;
 }
 .fa {
-    font-size: 50px;
-    padding: 7px;
+    font-size: 5rem;
+    padding: 0.7rem;
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
@@ -132,30 +147,55 @@ li img {
     color: #333;
 }
 #about img {
-    width: 150px;
-    border-radius: 50%;
-    margin-right: 20px;
-    align-items: center;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 50%;
+  margin-right: 2rem;
+  align-items: center;
+}
+.about-content h2, .about-content p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+.about-content a {
+    display: inline-block;
+    margin-bottom: 4rem;
 }
 #education-skills {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
+    justify-content: space-around;
+    padding: 2rem;
     border-radius: 5px;
-    margin-top: 20px;
+    margin-top: 2rem;
     background: #f5f581;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 #education-skills h3 {
     margin-top: 0;
-    margin-left: 20px;
+    margin-left: 2rem;
+}
+#education-skills ul{
+    padding: 1rem;
+}
+#education-skills li {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
 }
 #projects {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 1rem;
+  background-color: #ADEBF4;
+}
+#projects h2, #projects p, #projects h3 #projects h4 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+#projects h2 {
+    margin-top: 2rem;
 }
 #projects a, #about a {
     background-color: #0077B6;
@@ -163,11 +203,11 @@ li img {
     text-decoration: none;
     font-weight: bold;
     justify-content: center;
-    padding: 5px 15px;
+    padding: 0.5rem 1.5rem;
     border-radius: 5px;
     transition: background-color 0.3s;
     list-style: none;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
   }
 #projects a:hover, #about a:hover {
@@ -178,18 +218,18 @@ li img {
 #projects ul {
   list-style-type: none;
   padding: 0;
-  width: 80%;
+  width: 90%;
 }
 .project-details {
   background-color: #90E0EF;
-  padding: 20px;
+  padding: 2rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 10rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 2rem;
   background-size: cover;
 }
 .project-details:hover {
@@ -199,16 +239,29 @@ li img {
 .project-details h3 {
   margin-top: 0;
 }
-
+.project-details img {
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 8px;
+  border: 3px solid #0077B6;
+}
+.project-details p {
+  flex: 1;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
 #contact {
-  padding: 20px;
+  padding: 2rem 2rem 10rem 2rem;
   background-color:#ddd;
   background-size: cover;
+  
 }
 .contact-form {
-  max-width: 500px;
-  margin: 50px auto;
-  padding: 20px;
+  width: 100%;
+  max-width: 50rem;
+  margin: 5rem auto;
+  padding: 2rem;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -218,25 +271,26 @@ li img {
 .contact-form h2 {
   text-align: center;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.5rem;
   color: #555;
   font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
 .form-group textarea {
-  width: 100%;
-  padding: 10px;
+  padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 4px;
   box-sizing: border-box; 
@@ -247,16 +301,18 @@ li img {
 }
 
 .contact-form button {
-  display: block;
   width: 100%;
-  padding: 10px;
+  display: flex;
+  padding: 1rem;
   background-color: #007bff;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 2rem;
   transition: background-color 0.3s ease;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .contact-form button:hover {
@@ -264,7 +320,7 @@ li img {
 }
 #footer {
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   background-color: #0077B6;
   color: white;
   position: relative;
@@ -272,7 +328,7 @@ li img {
   background-size: cover;
 }
 #footer p {
-  margin-top: 10px;
+  margin-top: 1rem;
   color: rgba(255, 255, 255, 0.886);
 }
 #footer a {

@@ -1,0 +1,54 @@
+/*  XXL Design for Extra Large laptops 1200px and above */
+@media (max-width: 78.75rem) {
+    /* Breakpoint at 1260px/16 = 78.75rem */
+  html {
+    font-size: 56.25%; 
+    /* 9px */
+  }
+}
+/* XL Design for Large laptops 992px to 1199px */
+@media (max-width: 71.25rem) {
+    /* Breakpoint at 1140px/16 = 71.25rem */
+  html {
+    font-size: 50%; 
+    /* 8px */
+  }
+}
+/* L Design for Medium tablets 768px to 991px */
+@media (max-width: 63.15rem) {
+    /* Breakpoint at 1010px/16 = 63.15rem */
+  html {
+    font-size: 43.75%; 
+    /* 7px */
+  }
+}
+/* M Design for Small tablets 600px to 767px */
+@media (max-width: 55.65rem) {
+    /* Breakpoint at 890px/16 = 55.65rem */
+  html {
+    font-size: 37.5%; 
+    /* 6px */
+  }     
+}
+/* S Design for Extra Small phones 599px and below */
+@media (max-width: 47.2rem) {
+    /* Breakpoint at 755px/16 = 47.2rem */
+  html {
+    font-size: 31.25%; 
+    /* 5px */
+  } 
+}
+/* XS Design for Extra Extra Small phones 479px and below */
+@media (max-width: 39.4rem) {
+    /* Breakpoint at 630px/16 = 39.4rem */
+  html {
+    font-size: 25%; 
+    /* 4px */
+  } 
+  #about {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Media queries for responsiveness */
