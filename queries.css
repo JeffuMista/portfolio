@@ -42,7 +42,7 @@
 @media (max-width: 39.4rem) {
     /* Breakpoint at 630px/16 = 39.4rem */
   html {
-    font-size: 25%; 
+    font-size: 43.75%; 
     /* 4px */
   } 
   #about {
